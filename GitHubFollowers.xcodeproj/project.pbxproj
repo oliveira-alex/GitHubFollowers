@@ -13,6 +13,8 @@
 		E7D7252527A8A49C009672DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7252427A8A49C009672DB /* SceneDelegate.swift */; };
 		E7D7252C27A8A49E009672DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D7252B27A8A49E009672DB /* Assets.xcassets */; };
 		E7D7252F27A8A49E009672DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D7252D27A8A49E009672DB /* LaunchScreen.storyboard */; };
+		E7EE792927A95780008396D1 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EE792827A95780008396D1 /* GFButton.swift */; };
+		E7EE792B27A962AA008396D1 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EE792A27A962AA008396D1 /* GFTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E7D7252B27A8A49E009672DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7D7252E27A8A49E009672DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7D7253027A8A49E009672DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7EE792827A95780008396D1 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		E7EE792A27A962AA008396D1 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				E7D7252427A8A49C009672DB /* SceneDelegate.swift */,
 				E7D3E2ED27A8F5BE004AC6EB /* SearchViewController.swift */,
 				E7D3E2EF27A8F65F004AC6EB /* FavoritesListViewController.swift */,
+				E7EE792827A95780008396D1 /* GFButton.swift */,
+				E7EE792A27A962AA008396D1 /* GFTextField.swift */,
 				E7D7252B27A8A49E009672DB /* Assets.xcassets */,
 				E7D7252D27A8A49E009672DB /* LaunchScreen.storyboard */,
 				E7D7253027A8A49E009672DB /* Info.plist */,
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7EE792B27A962AA008396D1 /* GFTextField.swift in Sources */,
 				E7D3E2EE27A8F5BE004AC6EB /* SearchViewController.swift in Sources */,
+				E7EE792927A95780008396D1 /* GFButton.swift in Sources */,
 				E7D7252327A8A49C009672DB /* AppDelegate.swift in Sources */,
 				E7D3E2F027A8F65F004AC6EB /* FavoritesListViewController.swift in Sources */,
 				E7D7252527A8A49C009672DB /* SceneDelegate.swift in Sources */,
