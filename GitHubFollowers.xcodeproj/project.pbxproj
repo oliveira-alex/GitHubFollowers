@@ -10,6 +10,7 @@
 		E74EEE6E27AC032E00070E08 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EEE6D27AC032E00070E08 /* Follower.swift */; };
 		E74EEE7027AC040400070E08 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EEE6F27AC040400070E08 /* User.swift */; };
 		E74EEE7427AD93DD00070E08 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EEE7327AD93DD00070E08 /* NetworkManager.swift */; };
+		E74EEE7727ADB22100070E08 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EEE7627ADB22100070E08 /* ErrorMessage.swift */; };
 		E7D3E2EE27A8F5BE004AC6EB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3E2ED27A8F5BE004AC6EB /* SearchViewController.swift */; };
 		E7D3E2F027A8F65F004AC6EB /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3E2EF27A8F65F004AC6EB /* FavoritesListViewController.swift */; };
 		E7D7252327A8A49C009672DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7252227A8A49C009672DB /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 		E74EEE6D27AC032E00070E08 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		E74EEE6F27AC040400070E08 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E74EEE7327AD93DD00070E08 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E74EEE7627ADB22100070E08 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		E7D3E2ED27A8F5BE004AC6EB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E7D3E2EF27A8F65F004AC6EB /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		E7D7251F27A8A49C009672DB /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		E74EEE7527ADB1FB00070E08 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E74EEE7627ADB22100070E08 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		E7D7251627A8A49C009672DB = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 		E7D7252127A8A49C009672DB /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				E74EEE7527ADB1FB00070E08 /* Utilities */,
 				E74EEE7227AD93C100070E08 /* Managers */,
 				E74EEE6C27AC030B00070E08 /* Model */,
 				E7ECEDFE27AB70A9007C06E8 /* Extensions */,
@@ -230,6 +241,7 @@
 				E7ECEDF727AB30CB007C06E8 /* GFBodyLabel.swift in Sources */,
 				E7ECEDF527AB2E28007C06E8 /* GFTitleLabel.swift in Sources */,
 				E7D7252327A8A49C009672DB /* AppDelegate.swift in Sources */,
+				E74EEE7727ADB22100070E08 /* ErrorMessage.swift in Sources */,
 				E74EEE7427AD93DD00070E08 /* NetworkManager.swift in Sources */,
 				E7D3E2F027A8F65F004AC6EB /* FavoritesListViewController.swift in Sources */,
 				E7D7252527A8A49C009672DB /* SceneDelegate.swift in Sources */,
