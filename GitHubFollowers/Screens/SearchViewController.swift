@@ -67,11 +67,13 @@ class SearchViewController: UIViewController {
         userNameTextField.delegate = self
         userNameTextField.text = "SAllen0400"
 
+        let padding: CGFloat = 50
+
         NSLayoutConstraint.activate([
-            userNameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
-            userNameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-            userNameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
-            userNameTextField.heightAnchor.constraint(equalToConstant: 50)
+            userNameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: padding),
+            userNameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            userNameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            userNameTextField.heightAnchor.constraint(equalToConstant: padding)
         ])
     }
 
@@ -79,11 +81,13 @@ class SearchViewController: UIViewController {
         view.addSubview(callToActionButton)
         callToActionButton.addTarget(self, action: #selector(pushFollowerListViewController), for: .touchUpInside)
 
+        let padding: CGFloat = 50
+
         NSLayoutConstraint.activate([
-            callToActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
-            callToActionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-            callToActionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
-            callToActionButton.heightAnchor.constraint(equalToConstant: 50)
+            callToActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -padding),
+            callToActionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            callToActionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            callToActionButton.heightAnchor.constraint(equalToConstant: padding)
         ])
     }
 }
