@@ -40,7 +40,7 @@ class FollowerListViewController: UIViewController {
     }
 
     func configureCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: view.threeColumnFlowLayout)
         view.addSubview(collectionView)
 
         collectionView.backgroundColor = .systemBackground
