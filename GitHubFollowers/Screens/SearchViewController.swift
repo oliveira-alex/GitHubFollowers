@@ -65,7 +65,8 @@ class SearchViewController: UIViewController {
     func configureTextField() {
         view.addSubview(userNameTextField)
         userNameTextField.delegate = self
-        userNameTextField.text = "SAllen0400"
+        #warning("remove test user later")
+        userNameTextField.text = "oliveira-alex" /// <- test user
 
         let padding: CGFloat = 50
 
