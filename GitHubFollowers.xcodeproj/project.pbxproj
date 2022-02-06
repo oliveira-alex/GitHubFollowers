@@ -190,8 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				E7D3E2ED27A8F5BE004AC6EB /* SearchViewController.swift */,
-				E7D3E2EF27A8F65F004AC6EB /* FavoritesListViewController.swift */,
 				E7ECEDF227AB1B19007C06E8 /* FollowerListViewController.swift */,
+				E7D3E2EF27A8F65F004AC6EB /* FavoritesListViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
