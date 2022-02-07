@@ -10,8 +10,8 @@
 		E74EEE6E27AC032E00070E08 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EEE6D27AC032E00070E08 /* Follower.swift */; };
 		E74EEE7027AC040400070E08 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EEE6F27AC040400070E08 /* User.swift */; };
 		E74EEE7427AD93DD00070E08 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EEE7327AD93DD00070E08 /* NetworkManager.swift */; };
-		E74EEE7727ADB22100070E08 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EEE7627ADB22100070E08 /* ErrorMessage.swift */; };
 		E75C5E0227B1390B00E48474 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C5E0127B1390B00E48474 /* UserInfoViewController.swift */; };
+		E75C5E0427B14E3A00E48474 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C5E0327B14E3A00E48474 /* GFError.swift */; };
 		E7D3E2EE27A8F5BE004AC6EB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3E2ED27A8F5BE004AC6EB /* SearchViewController.swift */; };
 		E7D3E2F027A8F65F004AC6EB /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3E2EF27A8F65F004AC6EB /* FavoritesListViewController.swift */; };
 		E7D7252327A8A49C009672DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7252227A8A49C009672DB /* AppDelegate.swift */; };
@@ -37,8 +37,8 @@
 		E74EEE6D27AC032E00070E08 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		E74EEE6F27AC040400070E08 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E74EEE7327AD93DD00070E08 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		E74EEE7627ADB22100070E08 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		E75C5E0127B1390B00E48474 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		E75C5E0327B14E3A00E48474 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		E7D3E2ED27A8F5BE004AC6EB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E7D3E2EF27A8F65F004AC6EB /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		E7D7251F27A8A49C009672DB /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,8 +93,8 @@
 		E74EEE7527ADB1FB00070E08 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				E74EEE7627ADB22100070E08 /* ErrorMessage.swift */,
 				E7D7F79527AEE07F0033BFC7 /* UIHelper.swift */,
+				E75C5E0327B14E3A00E48474 /* GFError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -304,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7ECEE0127AB7CD1007C06E8 /* GFAlertContainerView.swift in Sources */,
+				E75C5E0427B14E3A00E48474 /* GFError.swift in Sources */,
 				E7ECEDF927AB31E2007C06E8 /* GFAlertViewController.swift in Sources */,
 				E7EE792B27A962AA008396D1 /* GFTextField.swift in Sources */,
 				E7D3E2EE27A8F5BE004AC6EB /* SearchViewController.swift in Sources */,
@@ -320,7 +321,6 @@
 				E7ECEDF527AB2E28007C06E8 /* GFTitleLabel.swift in Sources */,
 				E7D7252327A8A49C009672DB /* AppDelegate.swift in Sources */,
 				E7D7F7A027B02C330033BFC7 /* GFEmptyStateView.swift in Sources */,
-				E74EEE7727ADB22100070E08 /* ErrorMessage.swift in Sources */,
 				E7D7F79627AEE07F0033BFC7 /* UIHelper.swift in Sources */,
 				E74EEE7427AD93DD00070E08 /* NetworkManager.swift in Sources */,
 				E7D3E2F027A8F65F004AC6EB /* FavoritesListViewController.swift in Sources */,
