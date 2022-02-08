@@ -22,6 +22,7 @@
 		E75C5E1527B1D5D400E48474 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C5E1427B1D5D400E48474 /* Date+Ext.swift */; };
 		E75C5E1727B1D65200E48474 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C5E1627B1D65200E48474 /* String+Ext.swift */; };
 		E75C5E1927B26ED700E48474 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C5E1827B26ED700E48474 /* PersistenceManager.swift */; };
+		E75C5E1B27B2900A00E48474 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C5E1A27B2900A00E48474 /* FavoriteCell.swift */; };
 		E7D3E2EE27A8F5BE004AC6EB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3E2ED27A8F5BE004AC6EB /* SearchViewController.swift */; };
 		E7D3E2F027A8F65F004AC6EB /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3E2EF27A8F65F004AC6EB /* FavoritesListViewController.swift */; };
 		E7D7252327A8A49C009672DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7252227A8A49C009672DB /* AppDelegate.swift */; };
@@ -59,6 +60,7 @@
 		E75C5E1427B1D5D400E48474 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		E75C5E1627B1D65200E48474 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		E75C5E1827B26ED700E48474 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		E75C5E1A27B2900A00E48474 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		E7D3E2ED27A8F5BE004AC6EB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E7D3E2EF27A8F65F004AC6EB /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		E7D7251F27A8A49C009672DB /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				E7D7F79127AE926F0033BFC7 /* FollowerCell.swift */,
+				E75C5E1A27B2900A00E48474 /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				E7D7F79627AEE07F0033BFC7 /* UIHelper.swift in Sources */,
 				E74EEE7427AD93DD00070E08 /* NetworkManager.swift in Sources */,
 				E7D3E2F027A8F65F004AC6EB /* FavoritesListViewController.swift in Sources */,
+				E75C5E1B27B2900A00E48474 /* FavoriteCell.swift in Sources */,
 				E75C5E1227B1CFDC00E48474 /* GFFollowersItemViewController.swift in Sources */,
 				E75C5E0E27B1AD0600E48474 /* GFItemInfoViewController.swift in Sources */,
 				E7D7252527A8A49C009672DB /* SceneDelegate.swift in Sources */,
