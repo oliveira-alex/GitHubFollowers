@@ -9,10 +9,10 @@ import UIKit
 
 class SearchViewController: UIViewController {
     let logoImageView = UIImageView()
-    let userNameTextField = GFTextField()
+    let usernameTextField = GFTextField()
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
 
-    var isUsernameEntered: Bool { return userNameTextField.text!.isEmpty == false }
+    var isUsernameEntered: Bool { return usernameTextField.text!.isEmpty == false }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class SearchViewController: UIViewController {
     }
 
     func createDismissKeyboardTapGesture() {
-        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
     }
 
@@ -43,19 +43,21 @@ class SearchViewController: UIViewController {
             return
         }
 
-        let followerListViewController = FollowerListViewController()
-        followerListViewController.username = userNameTextField.text
-        followerListViewController.title = userNameTextField.text
+        usernameTextField.resignFirstResponder()
+
+        let followerListViewController = FollowerListViewController(username: usernameTextField.text!)
         navigationController?.pushViewController(followerListViewController, animated: true)
     }
 
     func configureLogoImageView() {
         view.addSubview(logoImageView)
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
-        logoImageView.image = UIImage(named: "gh-logo")!
+        logoImageView.image = Images.ghLogo
+
+        let topConstraintConstant: CGFloat = (DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed) ? 20 : 80
 
         NSLayoutConstraint.activate([
-            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
+            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: topConstraintConstant),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             logoImageView.heightAnchor.constraint(equalToConstant: 200),
             logoImageView.widthAnchor.constraint(equalToConstant: 200)
@@ -63,19 +65,20 @@ class SearchViewController: UIViewController {
     }
 
     func configureTextField() {
-        view.addSubview(userNameTextField)
-        userNameTextField.delegate = self
+        view.addSubview(usernameTextField)
+        usernameTextField.delegate = self
         #warning("remove test users later")
-        userNameTextField.text = "SAllen0400"  /// <- test user
+        usernameTextField.text = "SAllen0400"  /// <- test user
 //        userNameTextField.text = "oliveira-alex" /// <- test user
 
         let padding: CGFloat = 50
+        let topConstraintConstant: CGFloat = (DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed) ? 20 : padding
 
         NSLayoutConstraint.activate([
-            userNameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: padding),
-            userNameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-            userNameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            userNameTextField.heightAnchor.constraint(equalToConstant: padding)
+            usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: topConstraintConstant),
+            usernameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            usernameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            usernameTextField.heightAnchor.constraint(equalToConstant: padding)
         ])
     }
 
