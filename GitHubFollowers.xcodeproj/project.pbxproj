@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E71442B427B55080001A68C3 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71442B327B5507F001A68C3 /* UITableView+Ext.swift */; };
 		E74EEE6E27AC032E00070E08 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EEE6D27AC032E00070E08 /* Follower.swift */; };
 		E74EEE7027AC040400070E08 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EEE6F27AC040400070E08 /* User.swift */; };
 		E74EEE7427AD93DD00070E08 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EEE7327AD93DD00070E08 /* NetworkManager.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E71442B327B5507F001A68C3 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		E74EEE6D27AC032E00070E08 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		E74EEE6F27AC040400070E08 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E74EEE7327AD93DD00070E08 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				E75C5E1427B1D5D400E48474 /* Date+Ext.swift */,
 				E7D7F79727AEE3A10033BFC7 /* UIView+Ext.swift */,
 				E75C5E1627B1D65200E48474 /* String+Ext.swift */,
+				E71442B327B5507F001A68C3 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				E75C5E0827B17B3000E48474 /* GFSecondaryTitleLabel.swift in Sources */,
 				E7ECEDF727AB30CB007C06E8 /* GFBodyLabel.swift in Sources */,
 				E75C5E1927B26ED700E48474 /* PersistenceManager.swift in Sources */,
+				E71442B427B55080001A68C3 /* UITableView+Ext.swift in Sources */,
 				E7D7F79827AEE3A10033BFC7 /* UIView+Ext.swift in Sources */,
 				E7ECEDF527AB2E28007C06E8 /* GFTitleLabel.swift in Sources */,
 				E75C5E1E27B3E64C00E48474 /* GFTabBarController.swift in Sources */,
