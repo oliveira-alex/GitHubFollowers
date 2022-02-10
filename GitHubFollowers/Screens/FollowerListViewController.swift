@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol FollowerListViewControllerDelegate: class {
-    func didRequestFollwers(for username: String)
-}
-
 class FollowerListViewController: GFDataLoadingViewController {
     enum Section {
         case main
@@ -188,7 +184,7 @@ extension FollowerListViewController: UISearchResultsUpdating {
 
 }
 
-extension FollowerListViewController: FollowerListViewControllerDelegate {
+extension FollowerListViewController: UserInfoViewControllerDelegate {
     func didRequestFollwers(for username: String) {
         self.username = username
         title = username
@@ -198,5 +194,6 @@ extension FollowerListViewController: FollowerListViewControllerDelegate {
         let firstItemIndexPath = IndexPath(item: 0, section: 0)
         collectionView.scrollToItem(at: firstItemIndexPath, at: .top, animated: true)
         getFollowers(username: username, page: page)
+        navigationItem.searchController?.isActive = false
     }
 }
