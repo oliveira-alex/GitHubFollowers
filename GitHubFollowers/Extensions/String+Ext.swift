@@ -5,9 +5,9 @@
 //  Created by Alex Oliveira on 07/02/2022.
 //
 
-import Foundation
+//import Foundation
 
-extension String {
+//extension String {
 //    func convertToDate() -> Date? {
 //        let dateFormatter = DateFormatter()
 //        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -22,4 +22,4 @@ extension String {
 //
 //        return date.convertToMonthYearFormat()
 //    }
-}
+//}

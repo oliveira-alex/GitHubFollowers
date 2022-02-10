@@ -34,6 +34,7 @@ class GFAlertViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
         view.addSubview(containerView)
+
         configureContainerView()
         configureTitleLabel()
         configureActionButton()

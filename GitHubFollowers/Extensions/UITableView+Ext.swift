@@ -12,6 +12,7 @@ extension UITableView {
         DispatchQueue.main.async { self.reloadData() }
     }
 
+    /// Removes empty rows from the bottom of a table view
     func removeExcessCells() {
         tableFooterView = UIView(frame: .zero)
     }
