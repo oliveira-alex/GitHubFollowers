@@ -83,7 +83,7 @@ class FollowerListViewController: GFDataLoadingViewController {
                 updateUI(with: followers)
             } catch {
                 if let error = error as? GFError {
-                    presentGFAlert(title: "Bad Stuff Happened", message: error.rawValue, buttonTitle: "OK")
+                    presentGFAlertOnMainThread(title: "Bad Stuff Happened", message: error.rawValue, buttonTitle: "OK")
                 } else {
                     presentDefaultError()
                 }
