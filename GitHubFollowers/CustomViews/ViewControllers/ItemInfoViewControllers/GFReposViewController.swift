@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol GFReposItemViewControllerDelegate: class {
+protocol GFReposItemViewControllerDelegate: AnyObject {
     func didTapGitHubProfile(for user: User)
 }
 

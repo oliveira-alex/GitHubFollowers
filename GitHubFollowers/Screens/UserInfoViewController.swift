@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol UserInfoViewControllerDelegate: class {
+protocol UserInfoViewControllerDelegate: AnyObject {
     func didRequestFollwers(for username: String)
 }
 
