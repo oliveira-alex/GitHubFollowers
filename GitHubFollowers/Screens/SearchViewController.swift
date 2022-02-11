@@ -10,7 +10,7 @@ import UIKit
 class SearchViewController: UIViewController {
     let logoImageView = UIImageView()
     let usernameTextField = GFTextField()
-    let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
+    let callToActionButton = GFButton(color: .systemGreen, title: "Get Followers", systemImageName: "person.3")
 
     var isUsernameEntered: Bool { return usernameTextField.text!.isEmpty == false }
 
@@ -66,9 +66,6 @@ class SearchViewController: UIViewController {
 
     func configureTextField() {
         usernameTextField.delegate = self
-        #warning("remove test users later")
-        usernameTextField.text = "SAllen0400"  /// <- test user
-//        userNameTextField.text = "oliveira-alex" /// <- test user
 
         let padding: CGFloat = 50
         let topConstraintConstant: CGFloat = (DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed) ? 20 : padding
