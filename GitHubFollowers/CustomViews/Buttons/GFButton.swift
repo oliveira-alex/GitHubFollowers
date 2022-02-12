@@ -25,6 +25,8 @@ class GFButton: UIButton {
     private func configure() {
         configuration = .tinted()
         configuration?.cornerStyle = .medium
+        configuration?.imagePlacement = .leading
+        configuration?.imagePadding = 6
 
         translatesAutoresizingMaskIntoConstraints = false
     }
@@ -33,9 +35,6 @@ class GFButton: UIButton {
         configuration?.baseBackgroundColor = color
         configuration?.baseForegroundColor = color
         configuration?.title = title
-
         configuration?.image = UIImage(systemName: systemImageName)
-        configuration?.imagePadding = 6
-        configuration?.imagePlacement = .leading
     }
 }
