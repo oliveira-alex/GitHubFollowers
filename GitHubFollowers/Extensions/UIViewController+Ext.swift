@@ -18,7 +18,7 @@ extension UIViewController {
     }
 
     func presentDefaultError() {
-        let alertViewController = GFAlertViewController(title: "Something went wrong",
+        let alertViewController = GFAlertViewController(title: "Something Went Wrong",
                                                         message: "We were unable to complete your task at this time. Please try again.",
                                                         buttonTitle: "OK")
         alertViewController.modalPresentationStyle = .overFullScreen

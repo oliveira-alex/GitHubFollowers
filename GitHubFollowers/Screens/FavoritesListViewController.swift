@@ -48,7 +48,7 @@ class FavoritesListViewController: GFDataLoadingViewController {
             case .success(let favorites):
                 self.updateUI(with: favorites)
             case .failure(let error):
-                self.presentGFAlert(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
+                self.presentGFAlert(title: "Something Went Wrong", message: error.rawValue, buttonTitle: "OK")
             }
         }
     }

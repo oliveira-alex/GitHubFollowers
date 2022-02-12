@@ -158,7 +158,7 @@ extension FollowerListViewController: UICollectionViewDelegate {
                 addUserToFavorites(user: user)
             } catch {
                 if let error = error as? GFError {
-                    presentGFAlert(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
+                    presentGFAlert(title: "Something Went Wrong", message: error.rawValue, buttonTitle: "OK")
                 } else {
                     presentDefaultError()
                 }
@@ -180,7 +180,7 @@ extension FollowerListViewController: UICollectionViewDelegate {
                 return
             }
 
-            self.presentGFAlert(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
+            self.presentGFAlert(title: "Something Went Wrong", message: error.rawValue, buttonTitle: "OK")
         }
     }
 }
